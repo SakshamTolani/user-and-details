@@ -1,6 +1,7 @@
 import styles from '@/styles/Home.module.css'
 import React, { useState } from 'react'
 import AccountCreation from './AccountCreationTab'
+import UserDetails from './UserDetailsTab'
 
 
 
@@ -32,7 +33,7 @@ function index() {
       </div>
 
       <div className={styles.tabContent}>
-        {activeTab === 'userDetails' && <div>UserDetails</div>}
+        {activeTab === 'userDetails' && <UserDetails/>}
         {activeTab === 'accountCreation' && <AccountCreation />}
       </div>
     </div>
