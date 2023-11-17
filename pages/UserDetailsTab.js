@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import styles from '@/styles/UserDetailsTab.module.css'
+import Modal from "./Modal"
 
 const usersData = [
     {
@@ -149,6 +150,7 @@ const UserDetails = () => {
 
     const [search, setSearch] = useState('');
     const [users, setUsers] = useState(usersData);
+    const [selectedUser, setSelectedUser] = useState(null);
 
     const handleSearch = (e) => {
         const inputValue = e.target.value;
@@ -165,6 +167,10 @@ const UserDetails = () => {
             ));
         }
     }
+
+        const openModal = user => {
+            setSelectedUser(user);
+        }
 
         return (
             <div className={styles.userDetails}>
@@ -204,6 +210,13 @@ const UserDetails = () => {
                         ))}
                     </tbody>
                 </table>
+
+                {selectedUser &&
+                    <Modal
+                        user={selectedUser}
+                        closeModal={() => setSelectedUser(null)}
+                    />
+                }
 
             </div>
         );
