@@ -1,40 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 User Management Dashboard
 
-## Getting Started
+A dashboard application for managing user accounts and details built with Next.js, React and CSS Modules.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **User Details Tab**
+  - Fetch and display user data
+  - Searchable user table
+  - View user details modal
+  - Generate user reports
+- **Account Creation Tab**
+  - Form to create user accounts
+  - Input validation
+  - Submit form to handle requests
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Frontend Components
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **UserDetails** - Fetches and displays user data in a searchable table. Allows viewing more details and generating user reports.
+- **AccountCreation** - Renders form to create new user accounts. Validates inputs and handles submission.
+- **Modal** - Displays a popup modal with more user details and a report generation button.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🗺️ Routes
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The `pages` directory contains the application routes:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `index.js` - Dashboard route rendered on `/`
+- `UserDetailsTab.js` - Fetches and displays user table
+- `AccountCreationTab.js` - Handles new account creation form
 
-## Learn More
+## 🔨 Built With
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository: `git clone https://github.com/SakshamTolani/user-and-details.git`
+2. Navigate to the frontend directory: `cd user-and-details`
+3. Install backend dependencies: `npm install`
+4. Start the server: `npm run dev`
 
-## Deploy on Vercel
+## 🤝 Contribution Guidelines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! If you spot any issues or want to add new features, create a pull request with your changes. Please make sure to follow the existing code style and add appropriate tests for your changes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📝 License
+
+This project is licensed under the MIT License. Feel free to modify and use it in your own projects.
+
+## 📧 Contact Me
+
+For any inquiries or suggestions, feel free to reach out to me at [sakshamtolani@gmail.com](mailto:sakshamtolani@gmail.com).
+
+## 🌟 Credits
+
+This project was developed by [Saksham Tolani](https://github.com/SakshamTolani). Feel free to connect with me on GitHub for any questions or collaborations.
+
+---
+
+Star this repository if you found it helpful! Happy coding! 🚀✨
